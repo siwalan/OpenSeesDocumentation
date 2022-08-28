@@ -14,9 +14,9 @@ The type of recorder created and the additional arguments required depends on th
    :caption: 1. Recorders to record Node Information
    :maxdepth: 1
 
-   NodeRecorder
-   EnvelopeNodeRecorder
-   DriftRecorder
+   node/NodeRecorder
+   node/EnvelopeNodeRecorder
+   node/DriftRecorder
 
 .. toctree::
    :caption: 2. Recorders to record Element Information
