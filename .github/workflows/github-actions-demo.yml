@@ -6,5 +6,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: python3 -m pip install sphinx
-      - run: ls
-      - run: python3 -m sphinx -M html source docs
+      - run: ls -al
+      - run: python3 -m sphinx -M html source/ docs/
