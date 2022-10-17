@@ -4,7 +4,7 @@ This repo is where the documentation for OpenSees is kept. The repo contains bot
 
 If you are looking for the online documentation, visit the repo through github pages.
 
-https://OpenSees.github.io/OpenSeesDocumentation
+https://siwalan.github.io/OpenSeesDocumentation
 
 
 ## Structure
