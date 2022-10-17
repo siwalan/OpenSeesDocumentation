@@ -83,7 +83,8 @@ html_theme_options = {
         'analytics_id': 'UA-2431545-1',
 	'logo_only': True,
 	'prev_next_buttons_location': None,
-        "body_max_width": None
+        "body_max_width": None,
+        'navigation_depth': 6,
 }
 
 #  'style_nav_header_background': '#F2F2F2' #64B5F6 #607D8B,
