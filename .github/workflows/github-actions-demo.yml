@@ -6,5 +6,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: python3 -m pip install sphinx
+      - run: python3 -m pip install sphinx sphinx_rtd_theme
       - run: python3 -m sphinx -M html source/ docs/
