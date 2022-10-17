@@ -19,7 +19,7 @@ Like many finite element applications, all nonlinear elements have associated wi
 	OpenSees Materials
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
    material/uniaxialMaterial
    material/ndMaterial

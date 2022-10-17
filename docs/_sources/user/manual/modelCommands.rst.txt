@@ -33,4 +33,4 @@ In addition to these commands, other commands needed for modelling include comma
    model/region
    model/damping
    model/block
-   model/geomTransf   
+   model/geomTransf/geomTransf   
