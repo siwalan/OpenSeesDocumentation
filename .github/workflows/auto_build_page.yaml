@@ -6,9 +6,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Delete Previous docs
-        run: |
-          rm -rf docs && mkdir docs
       - name: build docs
         run: |
           python3 -m pip install sphinx sphinx_rtd_theme && python3 -m sphinx -b html source/ docs 
