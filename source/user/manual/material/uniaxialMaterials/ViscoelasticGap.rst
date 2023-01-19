@@ -22,7 +22,7 @@ This material is implemented as a compression-only gap material, so $gap should 
 .. Description::
 This material model follows the constitutive law
 
-  .. math:: f_c(t) = k(\delta(t)-g) + c\dot{delta}(t)
+  .. math:: f_c(t) = k(\delta(t)-g) + c \dot{\delta} (t)
 
 where t is time, :math:`f_c (t)`  is the contact force, :math:`k` is the stiffness ($K), :math:`\delta(t)` is the indentation, g is the initial gap ($gap), c is the damping coefficient ($C) and :math:`\dot{\delta}(t)` is the indentation velocity.
 

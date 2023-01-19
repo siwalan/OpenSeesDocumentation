@@ -15,7 +15,7 @@ This command is used to construct the uniaxial Hertz Damp Material
    $Kh, |float|,  nonlinear Hertz contact stiffness.
    $xiNorm, |float|, normalized impact damping ratio.
    $gap, |float|, initial gap.
-   $n, |float|, indentation exponent (optional, default: 1.5).
+   $n, |float|, indentation exponent (optional with default value of: 1.5).
 
 .. note::
 
@@ -31,6 +31,7 @@ where t is time, :math:`f_c (t)`  is the contact force, :math:`k_h` is the nonli
    .. math:: c_h = \overline{\xi} \frac{k_h}{\dot{\delta}_0} (\delta(t) - g)^n
 
 where :math:`\dot{\delta}_0` is the pre-impact indentation velocity. The normalized impact damping ratio :math:`\overline{\xi}` ($xiNorm) is usually related to the coefficient of restitution, represented by e. The recommended form of :math:`\overline{\xi}` is
+   
    .. math:: \overline{\xi} = \frac{8}{5} \frac{1-e}{e}
 
 Response of the Hertzdamp material during impact:

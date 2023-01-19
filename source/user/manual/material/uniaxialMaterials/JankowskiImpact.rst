@@ -5,7 +5,7 @@ Jankowski Impact Material
 
 This command is used to construct the uniaxial Jankowski Impact Material 
 
-.. function:: uniaxialMaterial Hertzdamp $matTag $Kh $xi $Meff $gap <$n>
+.. function:: uniaxialMaterial JankowskiImpact  $matTag $Kh $xi $Meff $gap <$n>
 
 .. csv-table:: 
    :header: "Argument", "Type", "Description"
@@ -16,7 +16,7 @@ This command is used to construct the uniaxial Jankowski Impact Material
    $xi, |float|, impact damping ratio.
    $Meff, |float|, effective mass.
    $gap, |float|, initial gap
-   $n, |float|, indentation exponent (optional, default: 1.5).
+   $n, |float|, indentation exponent (optional with default value of  1.5).
 
 .. note::
 
@@ -29,7 +29,7 @@ This material model follows the constitutive law
 
 where t is time, :math:`f_c (t)`  is the contact force, :math:`k_h` is the nonlinear Hertz contact stiffness ($Kh), :math:`\delta(t)` is the indentation, g is the initial gap ($gap), n is the indentation exponent ($n), and :math:`\dot{\delta}(t)` is the indentation velocity. Damping is only applied during the approach phase, when :math:`\delta (t) > 0`. The damping coefficient :math:`c_J`` is computed as
 
-   .. math:: c_h = \xi_j \sqrt{ m_{\textrm{eff}} k_h (\delta(t) -g)^{n-1}}
+   .. math:: c_h = 2 \xi_j \sqrt{ m_{\textrm{eff}} k_h (\delta(t) -g)^{n-1}}
 
 where :math:`m_{\textrm{eff}}` is the effective mass of the system ($Meff), computed using the masses of the coliding bodies :math:`m_1` and :math:`m_2`:
    
@@ -37,7 +37,7 @@ where :math:`m_{\textrm{eff}}` is the effective mass of the system ($Meff), comp
       
 The damping ratio :math:`\xi_j` ($xi) is usually related to the coefficient of restitution, represented by e. The recommended form of :math:`\xi_j` is
 
-   .. math:: \xi = \frac{9\sqrt{5}}{2} (\frac{1-e^2}{e(e(9*\pi-16)+16)})
+   .. math:: \xi = \frac{9\sqrt{5}}{2} (\frac{1-e^2}{e(e(9\pi-16)+16)})
 
 Response of the JankowskiImpact  material during impact:
 
